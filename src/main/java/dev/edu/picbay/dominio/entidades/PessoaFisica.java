@@ -6,6 +6,13 @@ public class PessoaFisica extends Pessoa {
 
     private String cpf;
 
+    public PessoaFisica() {}
+
+    public PessoaFisica(Long id, String nome, String email, String senha, String cpf) {
+        super(id, nome, email, senha);
+        this.cpf = cpf;
+    }
+
     public String getCpf() {
         return cpf;
     }

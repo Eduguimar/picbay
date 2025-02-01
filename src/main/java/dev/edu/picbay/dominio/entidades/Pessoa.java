@@ -7,6 +7,15 @@ abstract public class Pessoa {
     private String email;
     private String senha;
 
+    public Pessoa() {}
+
+    public Pessoa(Long id, String nome, String email, String senha) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+    }
+
     public Long getId() {
         return id;
     }
